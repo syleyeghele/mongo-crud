@@ -27,7 +27,7 @@ const todoListSchema = new Schema({
         unique: true,
     },
     time: {
-        type: String,
+        type: Date,
         require: true,
         unique: true,
     },
@@ -36,4 +36,4 @@ const todoListSchema = new Schema({
 
 const todoList = mongoose.model('todolist', todoListSchema)
 
-module.exports = todoList
+module.exports = todoList;
